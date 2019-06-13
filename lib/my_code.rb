@@ -32,11 +32,11 @@ end
 #reduce-like. all return a VALUE
 
 def reduce_to_total(source_array, starting_point=0)
-  num = 1
+  num = 0
   source_array.length.times do |i|
-    num = starting_point + i
+    num = source_array[i] * i
   end
-  num
+  num += starting_point 
 end
 
 def reduce_to_all_true(arr)
