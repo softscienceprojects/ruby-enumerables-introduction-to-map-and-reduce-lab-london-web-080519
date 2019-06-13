@@ -50,5 +50,11 @@ def reduce_to_all_true(arr)
 end
 
 def reduce_to_any_true(arr)
-
+  val = false
+  arr.length.times do |el|
+    if arr[el] == true
+      val = true
+    end
+  end
+  val
 end
